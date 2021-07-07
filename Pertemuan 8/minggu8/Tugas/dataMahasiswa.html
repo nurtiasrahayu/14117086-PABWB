@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Tabel Mahasiswa</title>
+    </head>
+    <body>
+        <h2>TAMBAH DATA</h2>
+        <form action="Tambah.php" method="POST">
+            NRP 	: <input type="text" name="NRP" size="20" maxlength="50"> <br>
+            Nama	: <input type="text" name="nama" size="20"maxlength="50"> <br>
+            Foto 	: <input type="file" name="file_foto" accept="image/*"> <br>
+            Jurusan : 
+            <select name="id_jur">
+                <option value="TL">Teknik Informatika</option>
+                <option value="IF">Teknik Elektro</option>
+                <option value="EL">Teknik Geomatika</option>
+                <option value="SA">Teknik Sipil</option>
+            </select><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <h2>===============================<br>
+        SEARCH DATA</h2>
+        <form  action="search.php" method="GET">
+        Nama 	: <input type="text" name="nama" size="20" maxlength="50">
+        <input type="submit" value="Cari Data">
+        </form>
+        
+        <h2>===============================<br>
+        HAPUS DATA</h2>
+        <form action="delete.php" method="POST">
+        NRP 	: <input type="text" name="NRP" size="20" maxlength="50">
+        <input type="submit" value="Hapus Data">        
+        </form>
+    </body>    
+</html>
